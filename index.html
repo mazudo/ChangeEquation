@@ -58,28 +58,30 @@
         <h3>Project Running in Space!</h3>
         <video src="videos/ISS-small.mp4" controls></video>
         <h3 id="calendar">Calendar</h3>
-        <table>
-            <tr>
-                <th></th>
-                <th scope="col">Spring 2018</th>
-                <th scope="col">Fall 2018</th>
-                <th scope="col">Winter 2018</th>
-                <th scope="col">Spring 2019</th>
-                <th scope="col">Fall 2019</th>
-            </tr>
-            <tr>
-                <th scope="row">Sammamish High School</th>
-                <td colspan="2">Group 1</td>
-                <td colspan="2">Group 2</td>
-                <td>TBD</td> 
-            </tr>
-            <tr>
-                <th scope="row">Chinook Middle School</th>
-                <td colspan="2"></td>
-                <td colspan="2">Group 1</td>
-                <td>TBD</td>
-            </tr>
-        </table>
+        <div class="calendar">
+            <table>
+                <tr>
+                    <th></th>
+                    <th class="column" scope="col">Spring 2018</th>
+                    <th class="column"  scope="col">Fall 2018</th>
+                    <th class="column"  scope="col">Winter 2018</th>
+                    <th class="column"  scope="col">Spring 2019</th>
+                    <th class="column"  scope="col">Fall 2019</th>
+                </tr>
+                <tr>
+                    <th class="row" scope="row">Sammamish High School</th>
+                    <td colspan="2">Group 1</td>
+                    <td colspan="2">Group 2</td>
+                    <td>TBD</td> 
+                </tr>
+                <tr class="even">
+                    <th class="row" scope="row">Chinook Middle School</th>
+                    <td colspan="2"></td>
+                    <td colspan="2">Group 1</td>
+                    <td>TBD</td>
+                </tr>
+            </table>
+        </div>
 
         <h3 id="partners">Partners</h3>
         <ul>
@@ -90,32 +92,38 @@
         </ul>
         <h3 id="volunteer">I want to volunteer!</h3>
         <form action="http://www.example.org/subscribe.php" method="GET">
-            <fieldset>
+            <fieldset id="volunteer-form">
                 <legend>Your Contact and Volunteer Interest</legend>
                 <p>
-                <label>First Name: <input type="text" name="fname" required="required"></label>
-                <br><br>
-                <label>Last Name: <input type="text" name="lname" required="required"></label>
-                <br><br>
-                <label>Email: <input type="email" name="email" required="required"></label>
+                <label for="fname" class="contact">First Name:</label>
+                <input type="text" id="fname" name="fname" required="required">
+                <br>
+                <label for="lname" class="contact">Last Name:</label>
+                <input type="text" id="lname" name="lname" required="required">
+                <br>
+                <label for="email" class="contact">Email:</label> 
+                <input type="email" id="email" name="email" required="required">
                 </p>
 
                 <p>
                     Please select your volunteer interest:<br>
                     <label><input type="radio" name="volunteer" id="volunteer-teach" value="teach" checked="checked">Teacher</label>
+                    <br>
                     <label><input type="radio" name="volunteer" id="volunteer-admin" value="admin">Administrative</label>
+                    <br>
                     <label><input type="radio" name="volunteer" id="volunteer-info" value="info">Provide me information only</label>
+                    <br>
                     <label><input type="radio" name="volunteer" id="volunteer-other" value="other">Other</label>
                     <br><br>
-                    <label>Availability Start Date (if known): <input type="date" name="availability" id="availability"></label>
-                    <br><br> 
+                    <label>Availability Date (if known): <input type="date" name="availability" id="availability"></label>
+                    <br><br>
                     <label for="comments">Comments:</label>
                     <br>
                     <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
-                    <br>
+                    <br><br>
                     <label><input type="checkbox" name="email-signup" id="email-signup" checked="checked">Sign me up for email updates</label>
                     <br><br>
-                    <input type="submit" value="Submit">
+                    <div class="submit"><input type="submit" value="Submit"></div>
                 </p>
             </fieldset> 
         </form>
