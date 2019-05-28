@@ -10,131 +10,114 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div id="page">
-        <h1>Help us Change the Equation!</h1>
-        <div id="menu">
+    <div id="page" class="grid-container">
+        <div id="menu" class="grid-item">
+            
             <ul class="menu">
-                <li class="menu"><a href="#mission">Mission</a></li>
-                <li class="menu"><a href="#topics">Topics</a></li>
-                <li class="menu"><a href="#kids">Kids</a></li>
-                <li class="menu"><a href="#calendar">Calendar</a></li>
-                <li class="menu"><a href="#partners">Partners</a></li>
-                <li class="menu"><a href="#contact">Contact</a></li>
+                <li class="menu"><img class="icon" src="images/edu-icon.jpeg" alt="picture of graduation hat"></li>
+                <li class="menu"><a href="calendar.html">Calendar</a></li>
+                <li class="menu"><a href="partners.html">Partners</a></li>
+                <li class="menu"><a href="#footer">Contact</a></li>
             </ul>
         </div>
-        <hr>
-        <h2 id="mission">Our Mission</h2>
-        <p>Bring <strong>equity to the world</strong> by inspiring <strong>low income youth</strong> 
-            to pursue STEM careers through <strong>innovative STEM projects</strong>.</p>
-        <img src="images/cover-photo2.jpg" alt="A group of kids smiling and reaching for toward the camera.">
-        <blockquote cite="https://www.goodreads.com/quotes/850987-i-raise-up-my-voice-not-so-i-can-shout-but">
-        <p>"I raise up my voice - not so I can shout 
+        <div id="header" class="grid-item">
+            <h1>Help us Change the Equation!</h1>
+            <p><strong>OUR MISSION</strong></p>
+            <p>Bring <strong>equity to the world</strong><br>
+                by inspiring <strong>low income youth</strong><br>
+                to pursue STEM careers through <strong>innovative STEM projects</strong></p>
+        <!--    <img src="images/cover-photo2.jpg" alt="A group of kids smiling and reaching for toward the camera.">-->
+            <!--<blockquote cite="https://www.goodreads.com/quotes/850987-i-raise-up-my-voice-not-so-i-can-shout-but">
+            <p>"I raise up my voice - not so I can shout 
             but so that those without a voice can be heard."</p>
-        </blockquote>
-        <p class="credits"> - Malala Yousafzai, <abbr title="United Nations">U.N.</abbr> Speech</p>
-
-        <h3 id="topics">STEM Topics</h3>
-        <ul>
-            <li>Physics: Heat transfer</li>
-            <li>Electronics: Core electrical engineering concepts, circuit wiring, soldering</li>
-            <li>Software: Core software engineering concepts</li>
-        </ul>
-
-        <h3 id="kids">The Kids</h3>
-        <figure>
-        <img src="images/sammamish-n2.jpg" alt="Building the space circuit">
-        <figcaption>Building the space circuit</figcaption>
-        </figure>
-        <figure>
-            <img src="images/chinook-solder2.jpg" alt="Soldering exercise">
-            <figcaption>Soldering exercise</figcaption>
-        </figure>
-        <!--
-        <figure>
-            <img src="images/chinook-ailab2.jpg" alt="Microsoft field trip">
-            <figcaption>Microsoft field trip</figcaption>
-        </figure>
-        -->
-        <h3>Project Running in Space!</h3>
-        <video src="videos/ISS-small.mp4" controls></video>
-        <h3 id="calendar">Calendar</h3>
-        <div class="calendar">
-            <table>
-                <tr>
-                    <th></th>
-                    <th class="column" scope="col">Spring 2018</th>
-                    <th class="column"  scope="col">Fall 2018</th>
-                    <th class="column"  scope="col">Winter 2018</th>
-                    <th class="column"  scope="col">Spring 2019</th>
-                    <th class="column"  scope="col">Fall 2019</th>
-                </tr>
-                <tr>
-                    <th class="row" scope="row">Sammamish High School</th>
-                    <td colspan="2">Group 1</td>
-                    <td colspan="2">Group 2</td>
-                    <td>TBD</td> 
-                </tr>
-                <tr class="even">
-                    <th class="row" scope="row">Chinook Middle School</th>
-                    <td colspan="2"></td>
-                    <td colspan="2">Group 1</td>
-                    <td>TBD</td>
-                </tr>
-            </table>
+            </blockquote>
+            <p class="credits"> - Malala Yousafzai, <abbr title="United Nations">U.N.</abbr> Speech</p>
+            -->
+        </div>
+        <div id="impact-section" class="grid-item grid-sub-item">
+            <h3>Impact by the numbers</h3>
+            <ul class="numbers">
+                    <li class="numbers"><span class="number">35</span> students</li>
+                    <li class="numbers"><span class="number">2</span> teachers</li>
+                    <li class="numbers"><span class="number">2</span> school districts</li>
+            </ul>
+        </div>
+        <div id="topics-section" class="grid-item grid-sub-item">
+            <h3 id="topics">STEM Topics</h3>
+            <ul>
+                <li>Physics: Heat transfer</li>
+                <li>Electronics: Core electrical engineering concepts, circuit wiring, soldering</li>
+                <li>Software: Core software engineering concepts</li>
+            </ul>
         </div>
 
-        <h3 id="partners">Partners</h3>
-        <ul>
-            <li><a href="https://www.microsoft.com">Microsoft</a></li>
-            <li><a href="http://www.questforspace.com/">Quest for Space</a></li>
-            <li><a href="https://www.highlineschools.org/">Highline School District</a></li>
-            <li><a href="https://bsd405.org/">Bellevue School District</a></li>
-        </ul>
-        <h3 id="volunteer">I want to volunteer!</h3>
-        <form action="http://www.example.org/subscribe.php" method="GET">
-            <fieldset id="volunteer-form">
-                <legend>Your Contact and Volunteer Interest</legend>
-                <p>
-                <label for="fname" class="contact">First Name:</label>
-                <input type="text" id="fname" name="fname" required="required">
-                <br>
-                <label for="lname" class="contact">Last Name:</label>
-                <input type="text" id="lname" name="lname" required="required">
-                <br>
-                <label for="email" class="contact">Email:</label> 
-                <input type="email" id="email" name="email" required="required">
-                </p>
+        <div id="kids-section" class="grid-item grid-sub-item">
+            <h3 id="kids">The Kids</h3>
+            <figure>
+            <img src="images/sammamish-n2.jpg" alt="Building the space circuit">
+            <figcaption>Building the space circuit</figcaption>
+            </figure>
+            <figure>
+                <img src="images/chinook-solder2.jpg" alt="Soldering exercise">
+                <figcaption>Soldering</figcaption>
+            </figure>
+            <!--
+            <figure>
+                <img src="images/chinook-ailab2.jpg" alt="Microsoft field trip">
+                <figcaption>Microsoft field trip</figcaption>
+            </figure>
+            -->
+        </div>
+        <div id="project-section" class="grid-item grid-sub-item">
+            <h3>Project Running in Space!</h3>
+            <video src="videos/ISS-small.mp4" controls></video>
+        </div>
+        <div id="volunteer-section" class="grid-item grid-sub-item">
+            <h3 id="volunteer">I want to volunteer!</h3>
+            <form action="http://www.example.org/subscribe.php" method="GET">
+                <fieldset id="volunteer-form">
+                    <legend>Your Contact and Volunteer Interest</legend>
+                    <p>
+                    <label for="fname" class="contact">First Name:</label>
+                    <input type="text" id="fname" name="fname" required="required">
+                    <br>
+                    <label for="lname" class="contact">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required="required">
+                    <br>
+                    <label for="email" class="contact">Email:</label> 
+                    <input type="email" id="email" name="email" required="required">
+                    </p>
 
-                <p>
-                    Please select your volunteer interest:<br>
-                    <label><input type="radio" name="volunteer" id="volunteer-teach" value="teach" checked="checked">Teacher</label>
-                    <br>
-                    <label><input type="radio" name="volunteer" id="volunteer-admin" value="admin">Administrative</label>
-                    <br>
-                    <label><input type="radio" name="volunteer" id="volunteer-info" value="info">Provide me information only</label>
-                    <br>
-                    <label><input type="radio" name="volunteer" id="volunteer-other" value="other">Other</label>
-                    <br><br>
-                    <label>Availability Date (if known): <input type="date" name="availability" id="availability"></label>
-                    <br><br>
-                    <label for="comments">Comments:</label>
-                    <br>
-                    <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
-                    <br><br>
-                    <label><input type="checkbox" name="email-signup" id="email-signup" checked="checked">Sign me up for email updates</label>
-                    <br><br>
-                    <div class="submit"><input type="submit" value="Submit"></div>
-                </p>
-            </fieldset> 
-        </form>
-        <hr> 
-        <h3 id="contact">Contact</h3>
-        <address>
-            <p><a href="mailto:masato.sudo@gmail.com">masato.sudo@gmail.com</a></p>
-            <p>One Microsoft Way, Redmond, WA 98052, USA</p>
-            <!--Microsoft Studio E Map-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.0251608564436!2d-122.14307758397719!3d47.64507789331174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906d6cea6525cd%3A0x1b5a109356d34a26!2sMicrosoft+Studio+E!5e0!3m2!1sen!2sus!4v1557960488368!5m2!1sen!2sus" width="300" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </address>
-    </div>
+                    <p>
+                        Please select your volunteer interest:<br>
+                        <label><input type="radio" name="volunteer" id="volunteer-teach" value="teach" checked="checked">Teacher</label>
+                        <br>
+                        <label><input type="radio" name="volunteer" id="volunteer-admin" value="admin">Administrative</label>
+                        <br>
+                        <label><input type="radio" name="volunteer" id="volunteer-info" value="info">Provide me information only</label>
+                        <br>
+                        <label><input type="radio" name="volunteer" id="volunteer-other" value="other">Other</label>
+                        <br><br>
+                        <label>Availability Date (if known): <input type="date" name="availability" id="availability"></label>
+                        <br><br>
+                        <label for="comments">Comments:</label>
+                        <br>
+                        <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+                        <br><br>
+                        <label><input type="checkbox" name="email-signup" id="email-signup" checked="checked">Sign me up for email updates</label>
+                        <br><br>
+                        <div class="submit"><input type="submit" value="Submit">
+                    </p>
+                </fieldset> 
+            </form>
+        </div>
+        <div id="footer" class="grid-item grid-sub-item"> 
+            <p>&copy Change The Equation - A STEM Education Non-Profit | 
+            <a href="mailto:masato.sudo@gmail.com">masato.sudo@gmail.com</a> | 
+            <a href="mailto:namkedia@microsoft.com">namkedia@microsoft.com</a>
+            </p>
+
+        </div>
+    </div><!--page div-->
 </body>
 </html>
