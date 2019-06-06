@@ -1,123 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="author" content="Masato">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Non-profit organizaton, bring world equity and equality, help low income youth pursue STEM careers, STEM education, innovative projects"
-    <title>Change the Equation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Regular CSS-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Change the Equation</title>
 </head>
 <body>
-    <div id="page" class="grid-container">
-        <div id="menu" class="grid-item">
-            
-            <ul class="menu">
-                <li class="menu"><img class="icon" src="images/edu-icon.jpeg" alt="picture of graduation hat"></li>
-                <li class="menu"><a href="calendar.html">Calendar</a></li>
-                <li class="menu"><a href="partners.html">Partners</a></li>
-                <li class="menu"><a href="#footer">Contact</a></li>
+    <!--expanding/collapsing nav bar-->
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+        <!--change the equation logo-->
+        <a class="navbar-brand" href="#">
+            <img class="icon" src="images/edu-icon.jpeg" alt="picture of graduation hat">        
+            Change the Equation
+        </a>
+        <!--collapsed menu-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-navlist"" aria-controls="navbar-navlist"" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--navbar content-->
+        <div class="collapse navbar-collapse" id="navbar-navlist">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="calendar.html">Calendar</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="partners.html">Partners</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                </li>
             </ul>
+
         </div>
-        <div id="header" class="grid-item">
-            <h1>Help us Change the Equation!</h1>
-            <p><strong>OUR MISSION</strong></p>
-            <p>Bring <strong>equity to the world</strong><br>
+    </nav>
+    <main>
+        <!--bootstrap grid-->
+        <div id="header" class="jumbotron navbar-dark bg-secondary">
+            <h1 class="display-4">Help us Change the Equation!</h1>
+            <hr>
+            <h4>Our Mission</h4>
+            <p>
+                Bring <strong>equity to the world</strong><br>
                 by inspiring <strong>low income youth</strong><br>
-                to pursue STEM careers through <strong>innovative STEM projects</strong></p>
-        <!--    <img src="images/cover-photo2.jpg" alt="A group of kids smiling and reaching for toward the camera.">-->
-            <!--<blockquote cite="https://www.goodreads.com/quotes/850987-i-raise-up-my-voice-not-so-i-can-shout-but">
-            <p>"I raise up my voice - not so I can shout 
-            but so that those without a voice can be heard."</p>
-            </blockquote>
-            <p class="credits"> - Malala Yousafzai, <abbr title="United Nations">U.N.</abbr> Speech</p>
-            -->
-        </div>
-        <div id="impact-section" class="grid-item grid-sub-item">
-            <h3>Impact by the numbers</h3>
-            <ul class="numbers">
-                    <li class="numbers"><span class="number">35</span> students</li>
-                    <li class="numbers"><span class="number">2</span> teachers</li>
-                    <li class="numbers"><span class="number">2</span> school districts</li>
-            </ul>
-        </div>
-        <div id="topics-section" class="grid-item grid-sub-item">
-            <h3 id="topics">STEM Topics</h3>
-            <ul>
-                <li>Physics: Heat transfer - convection, conduction, radiation</li>
-                <li>Electronics: Core electrical engineering concepts, circuit wiring, soldering</li>
-                <li>Software: Core software engineering concepts</li>
-            </ul>
-        </div>
-
-        <div id="kids-section" class="grid-item grid-sub-item">
-            <h3 id="kids">The Kids</h3>
-            <figure>
-            <img src="images/sammamish-n2.jpg" alt="Building the space circuit">
-            <figcaption>Building the space circuit</figcaption>
-            </figure>
-            <figure>
-                <img src="images/chinook-solder2.jpg" alt="Soldering exercise">
-                <figcaption>Soldering</figcaption>
-            </figure>
-            <!--
-            <figure>
-                <img src="images/chinook-ailab2.jpg" alt="Microsoft field trip">
-                <figcaption>Microsoft field trip</figcaption>
-            </figure>
-            -->
-        </div>
-        <div id="project-section" class="grid-item grid-sub-item">
-            <h3>Project Running in Space!</h3>
-            <video src="videos/ISS-small.mp4" controls></video>
-        </div>
-        <div id="volunteer-section" class="grid-item grid-sub-item">
-            <h3 id="volunteer">I want to volunteer!</h3>
-            <form action="http://www.example.org/subscribe.php" method="GET">
-                <fieldset id="volunteer-form">
-                    <legend>Your Contact and Volunteer Interest</legend>
-                    <p>
-                    <label for="fname" class="contact">First Name:</label>
-                    <input type="text" id="fname" name="fname" required="required">
-                    <br>
-                    <label for="lname" class="contact">Last Name:</label>
-                    <input type="text" id="lname" name="lname" required="required">
-                    <br>
-                    <label for="email" class="contact">Email:</label> 
-                    <input type="email" id="email" name="email" required="required">
-                    </p>
-
-                    <p>
-                        Please select your volunteer interest:<br>
-                        <label><input type="radio" name="volunteer" id="volunteer-teach" value="teach" checked="checked">Teacher</label>
-                        <br>
-                        <label><input type="radio" name="volunteer" id="volunteer-admin" value="admin">Administrative</label>
-                        <br>
-                        <label><input type="radio" name="volunteer" id="volunteer-info" value="info">Provide me information only</label>
-                        <br>
-                        <label><input type="radio" name="volunteer" id="volunteer-other" value="other">Other</label>
-                        <br><br>
-                        <label>Availability Date<br> (if known): <input type="date" name="availability" id="availability"></label>
-                        <br><br>
-                        <label for="comments">Comments:</label>
-                        <br>
-                        <textarea name="comments" id="comments" cols="32" rows="5"></textarea>
-                        <br><br>
-                        <label><input type="checkbox" name="email-signup" id="email-signup" checked="checked">Sign me up for email updates</label>
-                        <br><br>
-                        <div class="submit"><input type="submit" value="Submit">
-                    </p>
-                </fieldset> 
-            </form>
-        </div>
-        <div id="footer" class="grid-item grid-sub-item"> 
-            <p>&copy Change The Equation - A STEM Education Non-Profit | 
-            <a href="mailto:masato.sudo@gmail.com">masato.sudo@gmail.com</a> | 
-            <a href="mailto:namkedia@microsoft.com">namkedia@microsoft.com</a>
+                to pursue STEM careers through <strong>innovative STEM projects</strong>
             </p>
-
         </div>
-    </div><!--page div-->
+        <div class="container">
+            <div class="row">
+                <div id="impact-section" class="col-12">
+                    <div class="box">
+                        <h3>Impact by the numbers</h3>
+                        <ul class="numbers">
+                            <li class="numbers"><span class="number">35</span> students</li>
+                            <li class="numbers"><span class="number">2</span> teachers</li>
+                            <li class="numbers"><span class="number">2</span> school districts</li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>  
+            <div class="row">
+                <div id="kids-section" class="col-md-4">
+                    <div class="mr-md-1 mt-2 box">
+                        <h3 id="kids">The Kids</h3>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid" src="images/sammamish-n2.jpg" alt="Building the space circuit">
+                            <figcaption class="figure-caption">Building the space circuit</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid" src="images/chinook-solder2.jpg" alt="Soldering exercise">
+                            <figcaption class="figure-caption">Soldering</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!--has multiple rows, do nested grid-->
+                <div id="topics-section" class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mr-md-1 mt-2 box">
+                            <h3 id="topics">STEM Topics</h3>
+                            <ul>
+                                <li>Physics: Heat transfer - convection, conduction, radiation</li>
+                                <li>Electronics: Core electrical engineering concepts, circuit wiring, soldering</li>
+                                <li>Software: Core software engineering concepts</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">                       
+                        <div id="project-section" class="col-md-12">
+                            <div class="mr-md-1 mt-2 box">
+                                <h3>Project Running in Space!</h3>
+                                <div class="col-md-12 embed-responsive embed-responsive-16by9">
+                                    <video src="videos/ISS-small.mp4" class="embed-responsive-item" controls></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="volunteer-section" class="col-md-4">
+                    <div class="mr-md-1 mt-2 box">
+                        <h3 id="volunteer">I want to volunteer!</h3>
+                        <form action="http://www.example.org/subscribe.php" method="GET">
+                            <p>Contact: </p>
+                            <div class="form-group">
+                                <label for="fname" class="contact">First Name:</label>
+                                <input type="text" class="form-control" id="fname" name="fname" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="lname" class="contact">Last Name:</label>
+                                <input type="text" class="form-control" id="lname" name="lname" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="contact">Email:</label> 
+                                <input type="email" class="form-control" id="email" name="email" required="required">
+                            </div>
+                            <p>Volunteer Interests: </p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="volunteer" id="volunteer-teach" value="teach" checked="checked">
+                                <label class="form-check-label" for="volunteer-teach">Teacher</label>
+                            </div>  
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="volunteer" id="volunteer-admin" value="admin">
+                                <label class="form-check-label" for="volunteer-admin">Administrative</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="volunteer" id="volunteer-info" value="info">
+                                <label class="form-check-label" for="volunteer-info">Information only</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="volunteer" id="volunteer-other" value="other">
+                                <label class="form-check-label" for="volunteer-other">Other</label>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="comments">Comments:</label>
+                                <textarea class="form-control" name="comments" id="comments" rows="3"></textarea>    
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="email-signup" id="email-signup" checked="checked">
+                                <label class="form-check-label" for="email-signup">Sign me up for email</label>
+                            </div>
+                            <hr>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        <!--
+                        <form action="http://www.example.org/subscribe.php" method="GET">
+                            <fieldset id="volunteer-form">
+                                <legend>Your Contact and Volunteer Interest</legend>
+                                <p>
+                                <label for="fname" class="contact">First Name:</label>
+                                <input type="text" id="fname" name="fname" required="required">
+                                <br>
+                                <label for="lname" class="contact">Last Name:</label>
+                                <input type="text" id="lname" name="lname" required="required">
+                                <br>
+                                <label for="email" class="contact">Email:</label> 
+                                <input type="email" id="email" name="email" required="required">
+                                </p>
+            
+                                <p>
+                                    Please select your volunteer interest:<br>
+                                    <label><input type="radio" name="volunteer" id="volunteer-teach" value="teach" checked="checked">Teacher</label>
+                                    <br>
+                                    <label><input type="radio" name="volunteer" id="volunteer-admin" value="admin">Administrative</label>
+                                    <br>
+                                    <label><input type="radio" name="volunteer" id="volunteer-info" value="info">Provide me information only</label>
+                                    <br>
+                                    <label><input type="radio" name="volunteer" id="volunteer-other" value="other">Other</label>
+                                    <br><br>
+                                    <label>Availability Date<br> (if known): <input type="date" name="availability" id="availability"></label>
+                                    <br><br>
+                                    <label for="comments">Comments:</label>
+                                    <br>
+                                    <textarea name="comments" id="comments" cols="32" rows="5"></textarea>
+                                    <br><br>
+                                    <label><input type="checkbox" name="email-signup" id="email-signup" checked="checked">Sign me up for email updates</label>
+                                    <br><br>
+                                    <div class="submit"><input type="submit" value="Submit">
+                                </p>
+                            </fieldset> 
+                        </form>
+                        -->
+                    </div>
+                    
+                </div>
+            </div><!--row-->
+
+        </div><!--.container-->
+    </main>
+    <!--
+    <div class="container">
+        <div class="row">
+            <div class="col-8 bg-primary">xs: 1 of 2 columns (col-8)</div>
+            <div class="col bg-primary">xs: 2 of 2 columns</div>
+        </div>
+        <div class="row">
+            <div class="col-md-auto">md: 1 of 3 columns (auto)</div>
+            <div class="col-md">md: 2 of 3 columns</div>
+            <div class="col-md">md: 3 of 3 columns</div>
+        </div>
+        
+
+    </div>
+    -->
+
+    <!-- Bootstrap scripts -- Keep at end of body-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
